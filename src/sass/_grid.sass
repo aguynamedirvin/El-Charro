@@ -1,0 +1,28 @@
+/** Containers **/
+.wrap
+	max-width: 95%
+	margin: 0 auto
+	@include clearfix
+
+@media (min-width: $break-big)
+	.wrap
+		@include container
+
+.alignright
+	float: right
+.alignleft
+	float: left
+.fullwidth
+	min-width: 100%
+
+
+/** Grid **/
+@media (min-width: $break-medium)
+	// Generate grid
+	@for $i from 1 through 12
+		.col-#{$i}
+			@include span($i)
+			&:last-of-type
+				@include last
+	.last
+		@include last

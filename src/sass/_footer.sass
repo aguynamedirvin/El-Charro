@@ -1,0 +1,56 @@
+/** Footer **/
+#footer
+	background: #1c1c1c
+	color: #dfdfdf
+	font-size: 1.2rem
+	@include clearfix
+
+#footer a
+	color: #c0c0c0
+	&:hover
+		color: #fff
+
+.footer-note
+	background: #222
+	padding: 35px 0
+	@include clearfix
+
+.footer-navigation
+	ul
+		list-style: none
+		margin: 0
+		padding: 0
+
+	li
+		display: inline-block
+		margin: 0 10px
+
+
+
+.footer-widgets
+	padding: 75px 0
+
+	.fa
+		margin-right: 8px
+		text-align: center
+		width: 15px
+
+	h3
+		color: #fff
+		font-size: 2.5rem
+
+	.contact-info
+		ul
+			list-style: none
+			margin: 0
+			padding: 0
+
+			li
+				margin: 10px 0
+
+	@media (min-width: $break-medium)
+		.our-vision
+			@include span(1 of 3)
+
+		.contact-info
+			@include span(2 of 3 last)

@@ -1,0 +1,63 @@
+$darken-primary: darken($primary-color, 10)
+
+/** Buttons **/
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] 
+	background: $primary-color
+	border: 0
+	color: #fff
+	cursor: pointer
+	display: inline-block
+	padding: 15px 20px
+	text-align: center
+	text-decoration: none
+	text-transform: capitalize
+	@include transition(background 0.5s ease)
+	&:hover, &:focus
+		background: $darken-primary
+
+.green
+	background: $green
+	&:hover, &:focus
+		background: darken($green, 10)
+
+/**	Forms **/
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select 
+	background: #f8f8f8
+	border-radius: 0
+	border: 1px solid #f8f8f8
+	font-family: $form-font
+	margin: 10px 0
+	padding: 15px 20px
+	width: 100%
+
+	&:focus
+		border-color: $primary-color
+		outline: 0
+
+
+textarea
+	min-height: 200px
+	resize: vertical
+
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea 
+	@include appearance(none)

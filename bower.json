@@ -1,0 +1,19 @@
+{
+  "name": "El-Charro",
+  "version": "1.0.0",
+  "authors": [
+    "Irvin Dominguez"
+  ],
+  "description": "El Charro Income Tax",
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.1",
+    "susy": "~2.2.2"
+  }
+}

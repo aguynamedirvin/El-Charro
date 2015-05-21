@@ -1,0 +1,36 @@
+/** Slider **/
+#main-slider
+	height: 550px
+	background-image: url(../img/obama.png)
+	background-size: auto 100%
+	background-position: right
+	background-repeat: no-repeat
+
+.slide-container
+	position: relative
+	top: 50%
+	@include transform(translateY(-50%))
+
+	.slide-content
+		@media screen and (min-width: $break-medium)
+			//max-width: 600px
+
+	.title
+		font-size: 5rem
+		font-weight: bold
+		text-transform: capitalize
+		@media screen and (max-width: $break-medium)
+			color: #FFF
+			text-shadow: 1px 1px 5px #000
+
+	.summary
+		color: #444
+		margin-bottom: 3rem
+		@media screen and (max-width: $break-medium)
+			color: #FFF
+			text-shadow: 1px 1px 5px #000
+
+	.button
+		border-radius: 5px
+		font-size: 1.2rem
+		text-transform: uppercase

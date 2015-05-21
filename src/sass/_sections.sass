@@ -1,0 +1,217 @@
+/** Featured Boxes **/
+#featured_boxes
+	@include linear-gradient(90deg, darken($primary-color, 1), lighten($primary-color, 22))
+
+.featured_boxes_wrap
+	width: 100%
+
+	@media screen and (min-width: $break-small)
+		@include container
+
+.featured_box
+	background: $primary-color
+	color: #fff
+	height: 250px
+	padding: 35px
+
+	&:nth-child(2)
+		background: lighten($primary-color, 10)
+		.icon
+			fill: lighten($primary-color, 10)
+
+	&:nth-child(3)
+		background: lighten($primary-color, 20)
+		.icon
+			fill: lighten($primary-color, 20)
+
+	h2
+		font-size: 2.5rem
+		text-transform: capitalize
+
+	.icon-container
+		background: #fff
+		border-radius: 100%
+		display: inline-block
+		float: left
+		height: 70px
+		margin: 0 10px 10px 0
+		padding: 15px
+		width: 70px
+
+	.desc
+		display: inline-block
+
+
+	@media (min-width: $break-medium)
+		float: left
+		width: percentage(1/3)
+
+
+/** Sections Defaults **/
+.section
+	padding: 80px 0
+	@include clearfix
+
+	&:last-of-type
+		padding-bottom: 0
+
+	.section_wrap
+		max-width: 900px
+		margin: 0 auto
+		@include clearfix
+
+	.section_meta
+		max-width: 90%
+		text-align: center
+		margin: 30px auto 40px
+
+		@media screen and (min-width: $break-medium)
+			max-width: 850px
+
+		h2:after
+			border-bottom: 1px solid $black
+			clear: both;
+			content: " ";
+			display: block;
+			margin: 20px auto
+			width: 100px
+		p
+			color: #515151
+	
+
+	.section_item
+		width: 100%
+		
+		@media screen and (min-width: $break-medium)
+			@include gallery(1 of 3)
+	
+	ul
+		list-style: none
+		padding: 0
+		@include clearfix
+		li
+			display: block
+
+	.title
+		text-transform: capitalize
+
+
+/** Why us **/
+#why-us
+	.section_item
+		padding: 20px
+		text-align: center
+	
+	.icon
+		display: inline-block
+		height: 70px
+		margin: 2.5rem 0
+	
+	.title
+		font-size: 2rem
+
+
+/** Our Services **/
+#services
+	background: #f9f9f9
+	padding: 80px 0
+		
+	.section_item
+		margin-bottom: 60px
+		margin-top: 60px
+		
+		@media screen and (min-width: $break-medium)
+			margin-bottom: 30px
+			margin-top: 30px
+			@include gallery(1 of 3 .15)
+			&:nth-child(4)
+				margin-left: 20%
+			&:nth-child(5)
+				margin-left: 52%
+
+	.icon
+		float: left
+		height: 55px
+		margin: 0 40px 30px 0
+		width: 55px
+		@media screen and (min-width: $break-medium)
+			height: 40px
+			width: 40px
+			margin: 0 15px 30px 0
+		
+
+	.title
+		font-size: 2.4rem
+		line-height: 1
+
+	p
+		overflow: hidden
+	
+
+
+/** Contact Us **/
+#contact-form
+	@media screen and (min-width: $break-medium)
+		.field
+			@include span(1 of 2)
+			&:nth-child(2n+2)
+				@include last
+
+#contact
+	#success, #error
+		border-radius: 5px
+		border-style: solid
+		border-width: 1px
+		color: #FFF
+		display: none
+		font-weight: bold
+		padding: 10px 20px
+	#success
+		background: $green
+		border-color: darken($green, 15)
+	#error
+		background: $red
+		border-color: darken($red, 15)
+	.error
+		color: $red
+	
+/** Tax Services **/
+#tax-services
+	color: #fff
+	background: $black
+
+	.tax-service-list
+		li
+			display: block
+			padding: 15px 15px
+			background: $primary-color
+			font-size: 2rem
+			margin-bottom: 1px
+			
+			&:hover
+				cursor: pointer
+
+			@media screen and (min-width: $break-medium)
+				margin-bottom: 20px
+				@include span(1 of 2)
+				
+				&:nth-child(even)
+					@include last
+
+		.current
+			background: #ededed
+			color: #222
+
+	.tab-content
+		display: none
+
+	.tab-content.current
+		display: inherit
+
+
+/** Visit us **/
+#map-canvas
+	height: 450px
+	margin: 0
+	width: 100%
+	z-index: -1

@@ -11,18 +11,3 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('current');
 	})
 });
-
-
-/** Slider **/
-$(document).ready(function(){
-	$('.slide-container').slick({
-		dots: false,
-		infinite: true,
-		autoplay: true,
-		slidesToShow: 1,
-  		autoplaySpeed: 2800,
-  		adaptiveHeight: true,
-  		arrows: true,
-  		respondTo: window
-	});
-});

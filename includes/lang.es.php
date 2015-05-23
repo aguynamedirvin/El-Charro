@@ -23,6 +23,7 @@ $menu['MENU_VISIT'] = 'Visitanos';
 
 // Slider
 $slide['1'] = array('title' => 'No pague las sanciones de Obamacare.', 'summary' => 'Permítanos ayudarle a evitar las sanciones de Obamacare. Somos bien informados en los seguros de salud. Póngase en contacto con nosotros para obtener más información.', 'button' => 'Contactanos');
+$slide['2'] = array('title' => 'Recibe una consultacion totalmente gratis.', 'summary' => 'Permítanos ayudarle a evitar las sanciones de Obamacare. Somos bien informados en los seguros de salud. Póngase en contacto con nosotros para obtener más información.', 'button' => 'Contactanos');
 
 
 

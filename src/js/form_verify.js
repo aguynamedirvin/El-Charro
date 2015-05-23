@@ -63,7 +63,7 @@ $(function() {
 				data: $(form).serialize(),
 				
 				// PHP File
-				url:"send_email.php",
+				url:"includes/send_email.php",
 				
 				success: function() {
 					$('#contact-form :input').attr('disabled', 'disabled');

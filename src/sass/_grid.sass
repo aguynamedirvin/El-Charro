@@ -16,6 +16,17 @@
 	min-width: 100%
 
 
+// Hide for screens smaller than 'medium'
+@media screen and (max-width: $break-medium) 
+	.hide-sm
+		display: none
+
+// Hide for screens bigger than 'medium'
+@media screen and (min-width: $break-medium) 
+	.hide-md
+		display: none
+
+
 /** Grid **/
 @media (min-width: $break-medium)
 	// Generate grid

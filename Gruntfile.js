@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				options: {
-						outputStyle: 'compressed'
+						outputStyle: 'expanded'
 				},
 				files: {
 					'build/css/normalize.css': 'src/sass/normalize.sass',
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 					**/
 
 					// Main
-					'build/js/main.min.js': ['src/js/form_verify.js', 'src/js/smooth_scroll.js', 'src/js/nav_follow.js', 'src/js/tabs.js', 'src/js/navigation.js', 'src/js/svg4everybody.js'],
+					'build/js/main.min.js': ['src/js/form_verify.js', 'src/js/smooth_scroll.js', 'src/js/nav_follow.js', 'src/js/tabs.js', 'src/js/slider.js', 'src/js/navigation.js', 'src/js/svg4everybody.js'],
 
 
 					// For mobile

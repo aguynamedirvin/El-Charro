@@ -2,7 +2,19 @@
 	include_once  'includes/common.php';
 ?>
 <!doctype html>
-<html class="no-js" lang="<?php if($_SESSION['lang'] == 'en') {echo 'en';} if($_SESSION['lang'] == 'es') {echo 'es';} ?>">
+<html class="no-js" lang="<?php
+
+	if (isset($_SESSION['lang'])) {
+		if($_SESSION['lang'] == 'en') {
+			echo 'en';
+		} elseif ($_SESSION['lang'] == 'es') {
+			echo 'es';
+		} 
+	} else {
+		echo 'en';
+	}
+
+?>">
 	<head>
 		
 		<!-- Force IE to use the latest rendering engine -->
@@ -25,8 +37,6 @@
 		<link rel="stylesheet" href="build/css/main.css">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,600|Open+Sans:400,300">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
 
 		
 		<!--[if IE]>
@@ -62,8 +72,8 @@
 		<div id="top-bar">
 			<div class="wrap">
 				<div class="alignleft">
-					<span class="phone"><i class="fa fa-phone"></i> <a href="tel: 9159344342">(915) 934 - 4342</a></span>
-					<span class="email"><i class="fa fa-envelope"></i> <a href="mailto: contact@elcharro.com">contact@elcharro.com</a></span>
+					<span class="phone"><i class="fa fa-phone"></i> <span class="hide-md">Call: </span><a href="tel: 9159344342">(915) 934 - 4342</a></span>
+					<span class="email hide-sm"><i class="fa fa-envelope"></i> <a href="mailto: contact@elcharro.com">contact@elcharro.com</a></span>
 				</div>
 				<div class="alignright">
 					<span><i class="fa fa-globe"></i></span>
@@ -98,18 +108,30 @@
 
 		<!-- Slider -->
 		<div id="main-slider">
-			<div class="slide-container wrap">
+			<div class="slide-container">
 				
-				<div class="slide-content">
-					<h2 class="title"><?php echo $slide['1']['title']; ?></h2>
-					<p class="summary"><?php echo $slide['1']['summary']; ?></p>
-					<a href="#contact" class="button green"><?php echo $slide['1']['button']; ?></a>
+				<div class="slide-container" style="background-image: url(build/img/obama.png);">
+					<div class="slide">
+						<div class="slide-content wrap">
+							<div class="slide-meta">
+								<h2 class="title"><?php echo $slide['1']['title']; ?></h2>
+								<p class="summary"><?php echo $slide['1']['summary']; ?></p>
+								<a href="#contact" class="button green"><?php echo $slide['1']['button']; ?></a>
+							</div>
+						</div>
+					</div>
 				</div>
-				
-				<div class="slide-content">
-					<h2 class="title">Receive a free tax consultation.</h2>
-					<p class="summary">Find out how you can receive a free of charge tax consultation today.</p>
-					<a href="#contact" class="button green">Find Out</a>
+
+				<div class="slide-container" style="background-image: url(build/img/1040_form.png);">
+					<div class="slide">
+						<div class="slide-content wrap">
+							<div class="slide-meta">
+								<h2 class="title"><?php echo $slide['2']['title']; ?></h2>
+								<p class="summary"><?php echo $slide['2']['summary']; ?></p>
+								<a href="#contact" class="button green"><?php echo $slide['2']['button']; ?></a>
+							</div>
+						</div>
+					</div>
 				</div>
 
 			</div>
@@ -362,10 +384,10 @@
 			<!-- Website info -->
 			<div class="footer-note">
 				<div class="wrap">
-					<div class="site-info alignleft">&copy; <?php echo date('Y') ?> <a href="index.html">El Charro</a> Tax Services. All Rights Reserved. Designed by <a href="http://squarepxl.com">SquarePixl</a>.</div>
+					<div class="site-info alignleft">&copy; <?php echo date('Y') ?> <a href="index.html">El Charro</a>. All Rights Reserved. Designed and developed by <a href="http://squarepixl.com"><span class="squarepixl">&#9632;</span> SquarePixl</a>.</div>
 
 					<!-- Footer nav menu -->
-					<div class="footer-navigation alignright">
+					<div class="footer-navigation alignright hide-sm">
 						<ul>
 							<li><a href="#why-us"><?php echo $menu['MENU_WHY_US']; ?></a></li>
 							<li><a href="#services"><?php echo $menu['MENU_SERVICES']; ?></a></li>

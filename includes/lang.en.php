@@ -23,6 +23,7 @@ $menu['MENU_VISIT'] = 'Visit us';
 
 // Slider
 $slide['1'] = array('title' => 'Don\'t pay Obamacare penalties.', 'summary' => 'Let us help you dodge Obamacare penalties and waive the fees. We are knowledgeable in health insurances. Contact us for more information.', 'button' => 'Contact Us');
+$slide['2'] = array('title' => 'Receive a free tax consultation.', 'summary' => 'Let us help you dodge Obamacare penalties and waive the fees. We are knowledgeable in health insurances. Contact us for more information.', 'button' => 'Contact Us');
 
 
 

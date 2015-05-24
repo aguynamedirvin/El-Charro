@@ -39,8 +39,8 @@
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 		
-		<!--[if IE]>
-		<script src="build/js/svg4everybody.min.js"></script>
+		<!--[if lte IE 8]>
+		<script src="build/js/svg4everybody.ie.min.js"></script>
 		<![endif]-->
 		
 		<!-- Modernizer -->
@@ -72,7 +72,7 @@
 		<div id="top-bar">
 			<div class="wrap">
 				<div class="alignleft">
-					<span class="phone"><i class="fa fa-phone"></i> <span class="hide-md">Call: </span><a href="tel: 9159344342">(915) 934 - 4342</a></span>
+					<span class="phone"><i class="fa fa-phone"></i> <span class="hide-md">Call Us: </span><a href="tel: 9159344342">(915) 934 - 4342</a></span>
 					<span class="email hide-sm"><i class="fa fa-envelope"></i> <a href="mailto: contact@elcharro.com">contact@elcharro.com</a></span>
 				</div>
 				<div class="alignright">
@@ -110,26 +110,22 @@
 		<div id="main-slider">
 			<div class="slide-container">
 				
-				<div class="slide-container" style="background-image: url(build/img/obama.png);">
-					<div class="slide">
-						<div class="slide-content wrap">
-							<div class="slide-meta">
-								<h2 class="title"><?php echo $slide['1']['title']; ?></h2>
-								<p class="summary"><?php echo $slide['1']['summary']; ?></p>
-								<a href="#contact" class="button green"><?php echo $slide['1']['button']; ?></a>
-							</div>
+				<div class="slide" style="background-image: url(build/img/obama.png);">
+					<div class="slide-content wrap">
+						<div class="slide-meta">
+							<h2 class="title"><?php echo $slide['1']['title']; ?></h2>
+							<p class="summary"><?php echo $slide['1']['summary']; ?></p>
+							<a href="#contact" class="button green"><?php echo $slide['1']['button']; ?></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="slide-container" style="background-image: url(build/img/1040_form.png);">
-					<div class="slide">
-						<div class="slide-content wrap">
-							<div class="slide-meta">
-								<h2 class="title"><?php echo $slide['2']['title']; ?></h2>
-								<p class="summary"><?php echo $slide['2']['summary']; ?></p>
-								<a href="#contact" class="button green"><?php echo $slide['2']['button']; ?></a>
-							</div>
+				<div class="slide" style="background-image: url(build/img/1040_form.png);">
+					<div class="slide-content wrap">
+						<div class="slide-meta">
+							<h2 class="title"><?php echo $slide['2']['title']; ?></h2>
+							<p class="summary"><?php echo $slide['2']['summary']; ?></p>
+							<a href="#contact" class="button green"><?php echo $slide['2']['button']; ?></a>
 						</div>
 					</div>
 				</div>
@@ -378,13 +374,14 @@
 						<li><i class="fa fa-phone"></i><b><?php echo $contact['info']['phone']; ?>:</b> <a href="tel: 9154878699">(915) 487 - 8699</a></li>
 					</ul>
 				</div>
+
 			</div>
 
 
 			<!-- Website info -->
 			<div class="footer-note">
 				<div class="wrap">
-					<div class="site-info alignleft">&copy; <?php echo date('Y') ?> <a href="index.html">El Charro</a>. All Rights Reserved. Designed and developed by <a href="http://squarepixl.com"><span class="squarepixl">&#9632;</span> SquarePixl</a>.</div>
+					<div class="site-info alignleft">&copy; <?php echo date('Y') ?> <a href="index.html">El Charro</a>. All Rights Reserved. A <a href="http://squarepixl.com"><span class="squarepixl">&#9632;</span> SquarePixl</a> websie.</div>
 
 					<!-- Footer nav menu -->
 					<div class="footer-navigation alignright hide-sm">

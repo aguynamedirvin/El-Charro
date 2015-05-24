@@ -24,8 +24,8 @@
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,600|Open+Sans:400,300">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		
-		<!--[if IE]>
-		<script src="build/js/svg4everybody.min.js"></script>
+		<!--[if lte IE 8]>
+		<script src="build/js/svg4everybody.ie.min.js"></script>
 		<![endif]-->
 		
 		<!-- Modernizer -->
@@ -40,10 +40,7 @@
 				{
 					// If SVGs not supported
 					test: Modernizr.svg,
-					nope: 'build/js/svg4everybody.min.js',
-					complete: function() {
-						console.log('No SVG 1 support');
-					}
+					nope: ['build/js/svg4everybody.min.js', 'build/js/svg4everybody.ie.min.js']
 				},
 			]);
 		</script>
@@ -96,14 +93,31 @@
 
 		<!-- Slider -->
 		<div id="main-slider">
-			<div class="slide-container wrap">
-				<div class="slide-content">
-					<h2 class="title">Don't pay Obamacare penalties.</h2>
-					<p class="summary">Let us help you dodge Obamacare penalties and waive the fees. We are knowledgeable in health insurances. Contact us for more information.</p>
-					<a href="#contact" class="button green">Contact Us</a>
+			<div class="slide-container">
+				
+				<div class="slide" style="background-image: url(build/img/obama.png);">
+					<div class="slide-content wrap">
+						<div class="slide-meta">
+							<h2 class="title">Don't pay Obamacare penalties.</h2>
+							<p class="summary">Let us help you dodge Obamacare penalties and waive the fees. We are knowledgeable in health insurances. Contact us for more information.</p>
+							<a href="#contact" class="button green">Contact Us</a>
+						</div>
+					</div>
 				</div>
+
+				<div class="slide" style="background-image: url(build/img/1040_form.png);">
+					<div class="slide-content wrap">
+						<div class="slide-meta">
+							<h2 class="title"><?php echo $slide['2']['title']; ?></h2>
+							<p class="summary"><?php echo $slide['2']['summary']; ?></p>
+							<a href="#contact" class="button green"><?php echo $slide['2']['button']; ?></a>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
+
 
 		<!-- Featured Boxes -->
 		<div id="featured_boxes">
@@ -346,13 +360,14 @@
 						<li><i class="fa fa-phone"></i><b>Phone:</b> <a href="tel: 9154878699">(915) 487 - 8699</a></li>
 					</ul>
 				</div>
+
 			</div>
 
 
 			<!-- Website info -->
 			<div class="footer-note">
 				<div class="wrap">
-					<div class="site-info alignleft">&copy; 2015 <a href="index.html">El Charro</a> Tax Services. All Rights Reserved.</div>
+					<div class="site-info alignleft">&copy; <?php echo date('Y') ?> <a href="index.html">El Charro</a>. All Rights Reserved. A <a href="http://squarepixl.com"><span class="squarepixl">&#9632;</span> SquarePixl</a> websie.</div>
 
 					<!-- Footer nav menu -->
 					<div class="footer-navigation alignright">
@@ -367,6 +382,8 @@
 			</div>
 		</footer>
 
+
+		<!-- JavaScript -->
 		<script>
 			Modernizr.load([
 				{
@@ -377,14 +394,14 @@
 						}
 					}
 				},
-				// All Other neccesary scrips
+				// All other neccesary scrips
 				{
 					load: [
 						'http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.min.js',
 						'http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js',
+						'http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js',
+						'build/js/main.min.js',
 
-						'https://maps.googleapis.com/maps/api/js',
-						'build/js/main.min.js'
 					]
 				},
 				// If the device is mobile
@@ -396,6 +413,37 @@
 					}
 				},
 			]);
+		</script>
+
+		<!-- Google Maps -->
+		<script>
+			function initialize() {
+				var myLatlng = new google.maps.LatLng(31.81882, -106.1845761);
+				var mapOptions = {
+					zoom: 15,
+					draggable: false,
+					center: myLatlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+
+				var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+				var marker = new google.maps.Marker({
+					position: myLatlng,
+					map: map,
+					title: 'El Charro'
+				});
+				
+				marker.setMap(map);
+			}
+			function loadScript() {
+				var script = document.createElement('script');
+				script.type = 'text/javascript';
+				script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
+				'&signed_in=true&callback=initialize';
+				document.body.appendChild(script);
+			}
+			window.onload = loadScript;
 		</script>
 
 

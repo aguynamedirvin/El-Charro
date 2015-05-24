@@ -72,6 +72,9 @@ $send_message = 'Send Message';
 
 $section['TAX_SERVICES'] = array('Tax services', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nihil, minima quia facilis amet. Deleniti natus dicta, debitis laudantium cupiditate amet qui magni ab totam, numquam suscipit et, blanditiis ut!');
 
+$tax_service['1'] = array('title' => 'Free consultation', 					'summary' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur reprehenderit at perferendis eius eos tempora asperiores laudantium itaque aspernatur iure voluptates, a non deleniti tenetur.');
+$tax_service['2'] = array('title' => 'Tax planning &amp; preparation', 		'summary' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur reprehenderit at perferendis eius eos tempora asperiores laudantium itaque aspernatur iure voluptates, a non deleniti tenetur.');
+
 
 
 // Come visit us

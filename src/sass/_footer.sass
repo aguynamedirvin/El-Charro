@@ -25,6 +25,10 @@
 		display: inline-block
 		margin: 0 10px
 
+@media screen and (max-width: $break-medium)
+	.site-info
+		text-align: center
+		width: 100%
 
 
 .footer-widgets
@@ -48,7 +52,7 @@
 			li
 				margin: 10px 0
 
-	@media (min-width: $break-medium)
+	@media screen and (min-width: $break-medium)
 		.our-vision
 			@include span(1 of 3)
 

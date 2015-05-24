@@ -5,7 +5,7 @@
 	height: 550px
 	overflow: hidden
 
-.slide-container
+.slide
 	background-position: right
 	background-repeat: no-repeat
 	background-size: auto 100%
@@ -63,8 +63,10 @@
 	overflow: hidden
 	padding: 0
 	position: relative
+
 	&:focus
 		outline: none
+		
 	&.dragging
 		cursor: pointer
 		cursor: hand
@@ -112,6 +114,6 @@
 	visibility: hidden
 
 .slick-vertical .slick-slide
+	border: 1px solid transparent
 	display: block
 	height: auto
-	border: 1px solid transparent

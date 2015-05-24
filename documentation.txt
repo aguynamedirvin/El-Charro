@@ -1,0 +1,2 @@
+Make to have SASS, Bower and Grunt installed to download project required files and folders. Once you have the
+required tools, from a the Terminal run "npm install" and "bower install".

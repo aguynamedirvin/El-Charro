@@ -72,6 +72,7 @@ $send_message = 'Enviar Mensaje';
 
 $section['TAX_SERVICES'] = array('Servicios de taxes', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nihil, minima quia facilis amet. Deleniti natus dicta, debitis laudantium cupiditate amet qui magni ab totam, numquam suscipit et, blanditiis ut!');
 
+$tax_service['1'] = array('title' => 'Free consul');
 
 
 // Come visit us

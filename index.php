@@ -72,7 +72,7 @@
 		<div id="top-bar">
 			<div class="wrap">
 				<div class="alignleft">
-					<span class="phone"><i class="fa fa-phone"></i> <span class="hide-md">Call Us: </span><a href="tel: 9159344342">(915) 934 - 4342</a></span>
+					<span class="phone"><i class="fa fa-phone"></i> <span class="hide-md"><?php echo $menu['call_us']; ?>: </span><a href="tel: 9159344342">(915) 934 - 4342</a></span>
 					<span class="email hide-sm"><i class="fa fa-envelope"></i> <a href="mailto: contact@elcharro.com">contact@elcharro.com</a></span>
 				</div>
 				<div class="alignright">
@@ -381,7 +381,7 @@
 			<!-- Website info -->
 			<div class="footer-note">
 				<div class="wrap">
-					<div class="site-info alignleft">&copy; <?php echo date('Y') ?> <a href="index.html">El Charro</a>. All Rights Reserved. A <a href="http://squarepixl.com"><span class="squarepixl">&#9632;</span> SquarePixl</a> websie.</div>
+					<div class="site-info alignleft">&copy; <?php echo date('Y') ?> <a href="index.html">El Charro</a>. All Rights Reserved. Proudly made by <a href="http://squarepixl.com"><span class="squarepixl">&#9632;</span> SquarePixl</a>.</div>
 
 					<!-- Footer nav menu -->
 					<div class="footer-navigation alignright hide-sm">

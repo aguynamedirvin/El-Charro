@@ -19,6 +19,8 @@ $menu['MENU_TAX_SERVICES'] = 'Servicios de taxes';
 $menu['MENU_CONTACT'] = 'Contactanos';
 $menu['MENU_VISIT'] = 'Visitanos';
 
+$menu['call_us'] = 'Llamenos';
+
 
 
 // Slider

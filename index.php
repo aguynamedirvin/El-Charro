@@ -35,6 +35,7 @@
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="build/css/normalize.css">
 		<link rel="stylesheet" href="build/css/main.css">
+
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,600|Open+Sans:400,300">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
@@ -411,9 +412,8 @@
 				// All other neccesary scrips
 				{
 					load: [
-						'http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.min.js',
+						'build/js/form.min.js',
 						'http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js',
-						'http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js',
 						'build/js/main.min.js',
 
 					]

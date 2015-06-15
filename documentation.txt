@@ -1,2 +1,18 @@
-Make to have SASS, Bower and Grunt installed to download project required files and folders. Once you have the
-required tools, from a the Terminal run "npm install" and "bower install".
+Make to have SASS, Bower and Grunt (and Grunt-CLI) installed to download project required files and folders. Once you have the
+required tools, from a the Terminal run "npm install" and "bower install" on the project directory.
+
+
+You can grab all the tools from: https://www.npmjs.com
+Node-SASS: https://github.com/sass/node-sass
+
+
+Commands:
+
+	- To watch SASS files and compile at the same time
+		- 'grunt'
+
+	- To compile SASS files
+		- 'grunt-build'
+
+	- To compile JS files
+		- 'grunt uglify'

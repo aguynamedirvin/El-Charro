@@ -55,7 +55,7 @@ module.exports = function(grunt) {
 					**/
 
 					// Main
-					'build/js/main.min.js': ['src/js/form_verify.js', 'src/js/smooth_scroll.js', 'src/js/nav_follow.js', 'src/js/tabs.js', 'src/js/navigation.js', 'src/js/svg4everybody.js', 'src/js/slick.js', 'src/js/slider.js'],
+					'build/js/main.min.js': ['src/js/form_verify.js', 'src/js/smooth_scroll.js', 'src/js/nav_follow.js', 'src/js/tabs.js', 'src/js/navigation.js', 'src/js/svg4everybody.js', 'src/js/slick_slider.js', 'src/js/slider_settings.js'],
 					'build/js/form.min.js': ['src/js/form_plugin.js'],
 
 					// For mobile

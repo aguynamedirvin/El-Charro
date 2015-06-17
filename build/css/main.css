@@ -121,10 +121,10 @@ h6 {
     height: 50px;
     position: absolute;
     width: 200px; }
-  @media screen and (min-width: 868px) {
-    #header .logo {
-      background-image: url(../img/logo.svg);
-      height: 70px; } }
+    @media screen and (min-width: 868px) {
+      #header .logo {
+        background-image: url(../img/logo.svg);
+        height: 70px; } }
 
 /** Icons **/
 .icon {
@@ -160,7 +160,6 @@ h6 {
         color: #fff;
         display: block;
         padding: 20px 15px;
-        text-decoration: none;
         text-decoration: none; }
         .site-navigation ul.navigation li a:hover {
           color: #f0f0f0; }
@@ -696,16 +695,15 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
     clear: both;
     content: "";
     display: table; }
-
-@media (min-width: 1200px) {
-  .wrap {
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto; }
-    .wrap:after {
-      content: " ";
-      display: block;
-      clear: both; } }
+  @media (min-width: 1200px) {
+    .wrap {
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto; }
+      .wrap:after {
+        content: " ";
+        display: block;
+        clear: both; } }
 
 .alignright {
   float: right; }

@@ -1,6 +1,6 @@
 /**
 
-	This script makes a navigation menu with the dropdown 'hamburger'
+	This script makes a navigation menu a hamburger dropdown
 
 **/
 
@@ -11,8 +11,7 @@
 			// Options
 			var cssmenu = $(this), settings = $.extend({
 				title: "Menu",
-				format: "dropdown",
-				sticky: false
+				format: "dropdown"
 			}, options);
 
 			return this.each(function() {
@@ -39,9 +38,6 @@
 						}
 					}   
 				});
-
-				if (settings.sticky === true) cssmenu.css('position', 'fixed');
-
 
 				resizeFix = function() {
 					var breakpoint = 868;

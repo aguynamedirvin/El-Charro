@@ -44,6 +44,63 @@
 
 
 
+ul.slick-dots
+	bottom: 25px
+	display: block
+	list-style: none
+	padding: 0
+	position: absolute
+	text-align: center
+	width: 100%
+
+	li
+		cursor: pointer
+		display: inline-block
+		height: 20px
+		margin: 0 5px
+		padding: 0
+		position: relative
+		width: 20px
+
+		&.slick-active button:before
+				opacity: .8
+
+		button
+			background: transparent
+			border: 0
+			color: transparent
+			cursor: pointer
+			display: block
+			font-size: 0
+			height: 20px
+			line-height: 0
+			outline: none
+			padding: 5px
+			width: 20px
+
+			&:hover, &:focus
+				outline: none
+
+				&:before
+					opacity: 1
+
+			&:before
+				-moz-osx-font-smoothing: grayscale
+				-webkit-font-smoothing: antialiased
+				color: black
+				content: '•'
+				font-size: 35px
+				height: 20px
+				left: 0
+				line-height: 20px
+				opacity: .25
+				position: absolute
+				text-align: center
+				top: 0
+				width: 20px
+
+
+
 /** Slick Slider default styles **/
 .slick-slider
 	box-sizing: border-box

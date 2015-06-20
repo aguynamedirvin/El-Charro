@@ -59,7 +59,7 @@ module.exports = function(grunt) {
 					'build/js/form.min.js': ['src/js/form_plugin.js'],
 
 					// For mobile
-					'build/js/fastclick.min.js': 'src/js/fastclick.js',
+					'build/js/mobile.min.js': 'src/js/fastclick.js',
 
 					// Polyfills/Fixes
 					'build/js/respond.min.js': 'src/js/respond.js',

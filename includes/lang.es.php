@@ -9,14 +9,16 @@
 
 
 $menu = array();
+$contact_us = 'Contactanos';
 
 
 // Navigation Menu
 
 $menu['MENU_WHY_US'] = 'Porque nosotros?';
-$menu['MENU_SERVICES'] = 'Nuestros servicios';
+$menu['MENU_SERVICES'] = 'Servicios';
 $menu['MENU_TAX_SERVICES'] = 'Servicios de taxes';
 $menu['MENU_CONTACT'] = 'Contactanos';
+$menu['MENU_MONEY_TRANSFERS'] = 'Transferencia de Dinero';
 $menu['MENU_VISIT'] = 'Visitanos';
 
 $menu['call_us'] = 'Llamenos';
@@ -40,7 +42,9 @@ $futured_box['3'] = array('title' => 'Obtenenga el máximo provecho de sus impue
 // Why Us
 
 $section['WHY_US'] = array('Porque nosotros?', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nihil, minima quia facilis amet. Deleniti natus dicta, debitis laudantium cupiditate amet qui magni ab totam, numquam suscipit et, blanditiis ut!');
-
+$why_us[1] = 'Somos profesionales con experiencia';
+$why_us[2] = 'Get the most out of your tax refund';
+$why_us[3] = 'Bajos precios sobre los preparativos de impuestos';
 
 // Our Services
 
@@ -52,6 +56,9 @@ $service['taxes'] 				= array('Taxes', 					'Lorem ipsum dolor sit amet, consect
 $service['money_transfer'] 		= array('Transferencia de dinero', 	'Ofrecemos un servicio de transferencia de dinero de 24 horas.');
 $service['state_tax_reporting'] = array('Impuestos estatales', 		'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aliquam delectus officia.');
 
+
+// Money Transfers
+$section['MONEY_TRANSFERS'] = array('Transferencia de dinero con Sigue', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quisquam, porro labore eveniet nulla vitae illo corrupti.');
 
 
 // Get in touch
@@ -74,7 +81,12 @@ $send_message = 'Enviar Mensaje';
 
 $section['TAX_SERVICES'] = array('Servicios de taxes', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nihil, minima quia facilis amet. Deleniti natus dicta, debitis laudantium cupiditate amet qui magni ab totam, numquam suscipit et, blanditiis ut!');
 
-$tax_service['1'] = array('title' => 'Free consul');
+$tax_service['1'] = array('title' => 'Consultacion Gratis',                 'summary' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nisi delectus exercitationem iusto, vero aliquam doloremque ab quas optio a iste ipsum, vel repudiandae laudantium officia ullam.');
+$tax_service['2'] = array('title' => 'Tax planning &amp; preparation',      'summary' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur reprehenderit at perferendis eius eos tempora asperiores laudantium itaque aspernatur iure voluptates, a non deleniti tenetur.');
+$tax_service['3'] = array('title' => 'Tax Service',                         'summary' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur reprehenderit at perferendis eius eos tempora asperiores laudantium itaque aspernatur iure voluptates, a non deleniti tenetur.');
+$tax_service['4'] = array('title' => 'Tax Service',                         'summary' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur reprehenderit at perferendis eius eos tempora asperiores laudantium itaque aspernatur iure voluptates, a non deleniti tenetur.');
+$tax_service['5'] = array('title' => 'Tax Service',                         'summary' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur reprehenderit at perferendis eius eos tempora asperiores laudantium itaque aspernatur iure voluptates, a non deleniti tenetur.');
+$tax_service['6'] = array('title' => 'Tax Service',                         'summary' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur reprehenderit at perferendis eius eos tempora asperiores laudantium itaque aspernatur iure voluptates, a non deleniti tenetur.');
 
 
 // Come visit us

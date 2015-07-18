@@ -23,6 +23,7 @@ img, figure {
   max-width: 100%; }
 
 a {
+  color: #0097e2;
   text-decoration: none; }
 
 /** Typography **/
@@ -237,7 +238,7 @@ h6 {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  padding: 15px 20px;
+  padding: 15px 35px;
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
@@ -251,6 +252,14 @@ h6 {
   background: #78bd33; }
   .green:hover, .green:focus {
     background: #5f9528; }
+
+.line {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff; }
+  .line:hover, .line:focus {
+    background: #0097e2;
+    border-color: #0097e2; }
 
 /**	Forms **/
 input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
@@ -297,7 +306,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   transform: translateY(-50%); }
   @media screen and (min-width: 868px) {
     .slide-content .slide-meta {
-      max-width: 70%; } }
+      max-width: 65%; } }
   .slide-content .title {
     font-size: 5rem;
     font-weight: bold;
@@ -313,6 +322,11 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
       .slide-content .summary {
         color: #FFF;
         text-shadow: 1px 1px 5px #000; } }
+  .slide-content a.img-credit {
+    color: #AAA;
+    display: block;
+    font-size: .8rem;
+    margin-top: 50px; }
   .slide-content .button {
     border-radius: 5px;
     font-size: 1.2rem;
@@ -613,6 +627,14 @@ ul.slick-dots {
   #services p {
     overflow: hidden; }
 
+/** Money Transfers **/
+#money-transfers {
+  background: #202020; }
+  #money-transfers h2, #money-transfers p {
+    color: #fff; }
+  #money-transfers .button {
+    margin-top: 30px; }
+
 /** Contact Us **/
 @media screen and (min-width: 868px) {
   #contact-form .field {
@@ -728,14 +750,10 @@ ul.slick-dots {
     .footer-widgets .contact-info ul li {
       margin: 10px 0; }
   @media screen and (min-width: 868px) {
-    .footer-widgets .our-vision {
-      width: 32.2580645161%;
-      float: left;
-      margin-right: 1.6129032258%; }
     .footer-widgets .contact-info {
       width: 66.1290322581%;
-      float: right;
-      margin-right: 0; } }
+      float: left;
+      margin-right: 1.6129032258%; } }
 
 /** Containers **/
 .wrap {

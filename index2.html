@@ -115,6 +115,16 @@
 					</div>
 				</div>
 
+				<div class="slide" style="background-image: url(build/img/sigue_slide.png); background-color: #ffe512">
+					<div class="slide-content wrap">
+						<div class="slide-meta">
+							<h2 class="title"><?php echo $slide['2']['title']; ?></h2>
+							<p class="summary"><?php echo $slide['2']['summary']; ?></p>
+							<a href="#contact" class="button green"><?php echo $slide['2']['button']; ?></a>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 
@@ -319,9 +329,9 @@
 							<h3>Tax Planning &amp; Preparation</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti illo ab nemo at natus minima debitis animi eum aut corporis in sint consequuntur commodi error enim a ad porro, vero.</p>
 						</div>
-						<div class="col-4 last">
+						<!-- <div class="col-4 last">
 							Image should go here
-						</div>
+						</div> -->
 					</div>
 
 				</div><!-- /.section-wrap -->
@@ -407,7 +417,7 @@
 				{
 					test: Modernizr.mq('only all and (max-width: 868px)'),
 					yep: 'build/js/fastclick.min.js',
-					complete: function() { 
+					callback: function() { 
 						FastClick.attach(document.body); 
 					}
 				},

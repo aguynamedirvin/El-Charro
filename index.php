@@ -107,7 +107,7 @@ if ($_SESSION['lang'] == 'es') {
 			<div class="wrap">
 				
 				<!-- Logo -->
-				<a href="index.html" class="logo alignleft"></a>
+				<a href="index.php" class="logo alignleft"></a>
 				
 				<!-- Main navigation menu -->
 				<nav class="site-navigation alignright" role="navigation">

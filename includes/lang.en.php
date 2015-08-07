@@ -26,15 +26,15 @@ $menu['call_us'] = 'Call Us';
 
 
 // Slider
-$slide['1'] = array('title' => 'Don\'t pay Obamacare penalties.',           'summary' => 'Let us help you dodge Obamacare penalties and waive the fees. We are knowledgeable in health insurances. Contact us for more information.', 'button' => 'Contact Us');
-$slide['2'] = array('title' => 'Receive a FREE tax consultation.',          'button' => 'Contact Us Today');
-$slide['3'] = array('title' => 'Fast and easy money transfers to Mexico',   'summary' => 'We offer a 24-hour money transfers to Mexico and all other countries.');
+$slide['1'] = array('title' => 'Don\'t pay Obamacare penalties.',           'summary'  => 'Let us help you dodge Obamacare penalties and waive the fees. We are knowledgeable in health insurances. Contact us for more information.', 'button' => 'Contact Us');
+$slide['2'] = array('title' => 'Receive a FREE tax consultation.',          'button'   => 'Contact Us Today');
+$slide['3'] = array('title' => 'Fast and easy money transfers to Mexico',   'summary'  => 'We offer a 24-hour money transfers to Mexico and all other countries.');
 
 
 // Futured Boxes
 
-$futured_box['1'] = array('title' => '100% satisfaction guaranteed', 		'summary' => 'Experienced tax returns preparers will analyze your individual circumstances and prepare professional tax returns');
-$futured_box['2'] = array('title' => '24 Hour Service', 					'summary' => 'Tax preparations can be completed anytime you desire. Call for a free telephone consultation');
+$futured_box['1'] = array('title' => '100% satisfaction guaranteed', 		'summary' => 'Experienced tax returns preparers will analyze your individual circumstances and prepare professional tax returns.');
+$futured_box['2'] = array('title' => '24 Hour Service', 					'summary' => 'Tax preparations can be completed anytime you desire. Call for a free telephone consultation.');
 $futured_box['3'] = array('title' => 'Get the most out of your taxes', 		'summary' => 'Tax as monthly, quarterly, and annual sales tax reports; franchise tax reports, and individual state tax reports.');
 
 
@@ -48,13 +48,13 @@ $why_us[3] = 'Reasonably priced tax return preparation';
 
 // Our Services
 
-$section['SERVICES'] = array('Our services', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nihil, minima quia facilis amet. Deleniti natus dicta, debitis laudantium cupiditate amet qui magni ab totam, numquam suscipit et, blanditiis ut!');
+$section['SERVICES'] = array('Our services');
 
 $service['translations'] 		= array('Translations', 		'Get your legal documents translated including birth certificates, divorce documents and many more.');
-$service['accounting'] 			= array('Accounting', 			'Monthly and annual accounting services for individuals and businesses');
-$service['taxes'] 				= array('Taxes', 				'Tax return preparations for individuals, partnerships, and corporations');
-$service['money_transfer'] 		= array('Money transfers', 		'We offer 24-hour money transfers to Mexico and all other countries');
-$service['state_tax_reporting'] = array('State tax reporting', 	'Tax as monthly, quarterly, and annual sales tax reports; franchise tax reports, and individual state tax reports');
+$service['accounting'] 			= array('Accounting', 			'Monthly and annual accounting services for individuals and businesses.');
+$service['taxes'] 				= array('Taxes', 				'Tax return preparations for individuals, partnerships, and corporations.');
+$service['money_transfer'] 		= array('Money transfers', 		'We offer 24-hour money transfers to Mexico and all other countries.');
+$service['state_tax_reporting'] = array('State tax reporting', 	'Texas monthly, quarterly, and annual sales tax reports; franchise tax reports, and individual state tax reports.');
 
 
 // Money Transfers
@@ -86,12 +86,12 @@ $tax_service['2'] = array('title' => 'Schedule C Business Tax Returns',     'sum
 $tax_service['3'] = array('title' => 'Tax Returns',                         'summary' => '');
 $tax_service['4'] = array('title' => 'Amended Tax Returns',                 'summary' => '');
 $tax_service['5'] = array('title' => 'Respond to IRS Paper Audits',         'summary' => '');
-$tax_service['6'] = array('title' => 'File Tax Returns for Past Years',     'summary' => 'File tax returns for past years, up to 10 years of not filed. We also prepare tax returns for immigration processing.');
+$tax_service['6'] = array('title' => 'File Tax Returns for Past Years',     'summary' => 'File tax returns for past years, up to 10 years. We also prepare tax returns for immigration processing.');
 
 
 // Come visit us
 
-$section['VISIT'] = array('Come visit us', 'Come visit us! We are located on Montana in front of Dollar General');
+$section['VISIT'] = array('Come visit us', 'Come visit us! We are located on Montana right next to Montana Vista Apartments.');
 
 
 

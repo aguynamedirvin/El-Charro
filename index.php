@@ -425,6 +425,8 @@ if ($_SESSION['lang'] == 'es') {
 							<li><a href="#why-us"><?php echo $menu['MENU_WHY_US']; ?></a></li>
 							<li><a href="#services"><?php echo $menu['MENU_SERVICES']; ?></a></li>
 							<li><a href="#contact"><?php echo $menu['MENU_CONTACT']; ?></a></li>
+							<li><a href="#money-transfers"><?php echo $menu['MENU_MONEY_TRANSFERS']; ?></a>
+							<li><a href="#tax-services"><?php echo $menu['MENU_TAX_SERVICES']; ?></a></li>
 							<li><a href="#visit"><?php echo $menu['MENU_VISIT']; ?></a></li>
 						</ul>
 					</div>

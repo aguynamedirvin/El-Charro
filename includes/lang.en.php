@@ -41,7 +41,7 @@ $futured_box['3'] = array('title' => 'Get the most out of your taxes', 		'summar
 
 // Why Us
 
-$section['WHY_US'] = array('Why choose us?', 'We are qualified tax return preparations; registered Tax Return Preparers (RTRP)');
+$section['WHY_US'] = array('Why choose us?', 'We are qualified on tax return preparations; registered Tax Return Preparers (RTRP)');
 $why_us[1] = 'We\'re experienced professionals';
 $why_us[2] = 'Get the most out of your tax refund';
 $why_us[3] = 'Reasonably priced tax return preparation';
@@ -58,7 +58,7 @@ $service['state_tax_reporting'] = array('State tax reporting', 	'Texas monthly, 
 
 
 // Money Transfers
-$section['MONEY_TRANSFERS'] = array('Sigue Money Transfers', 'With our 24-hour money transfer service, you can instantly send money to most cities in Mexico, Central America and South America for a minimal charge of $10 for money transfers of up to $1,000. The first transfer is wired at no charge to Mexico.');
+$section['MONEY_TRANSFERS'] = array('Sigue Money Transfers', 'With our 24-hour money transfer service, you can instantly send money to most cities in Mexico, Central America and South America for a minimum charge of $10 for money transfers of up to $1,000. The first transfer is wired at no charge to Mexico.');
 
 
 // Get in touch
